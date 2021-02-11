@@ -1,0 +1,32 @@
+a {
+  color: #9a9d90;
+}
+a:hover {
+  text-decoration: none;
+  color: #d8dde1;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+}
+.allFindedBlocks {
+  position: absolute;
+  top: 90%;
+}
+.findedBlock {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  width: 200px;
+  z-index: 1;
+  background-color: #f1f3f4;
+  height: 50px;
+  color: #343a40;
+  padding-top: 5px;
+  border-bottom: 1px solid #c1c1c1;
+  font-family: serif;
+  overflow: hidden;
+  &:hover {
+    border: 1px solid #77c7ef;
+  }
+}
