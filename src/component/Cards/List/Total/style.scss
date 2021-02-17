@@ -1,24 +1,26 @@
-
-.Total{
+.Total {
   width: auto;
   display: flex;
   // border: 2px solid;
   border-radius: 20px;
   margin-top: 10px;
   background-color: #fff;
-  button{
+  button {
     width: 35px;
     height: 35px;
-    border:none;
+    border: none;
     border-radius: 25px;
-    margin:2px 0 0 10px;
-    background-color: #007BFF;
-    &:hover{
+    margin: 2px 0 0 10px;
+    background-color: #007bff;
+    &:hover {
       background-color: #042f61;
+    }
+    &:focus {
+      outline: none;
     }
   }
 }
-.totalItems{
+.totalItems {
   text-align: center;
   width: 30%;
   height: 30px;
@@ -26,5 +28,5 @@
   margin: 5px 0 5px 5px;
   font-size: 20px;
   font-family: Georgia, serif;
-  border-right:1px dashed ;
+  border-right: 1px dashed;
 }

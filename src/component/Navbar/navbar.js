@@ -22,11 +22,13 @@ const Menu = ()=>{
     <>
     {
       HandleChnge && val.length > 0?
-<Navbar bg="dark" variant="dark">
-    <Link to='/'>Shop time</Link>
+<Navbar bg="dark" variant="dark" className='nav'>
+    <h1><Link to='/'>Shop time</Link></h1>
     <Nav className="mr-auto">
       <Link to='/'>Home</Link>
-      <Link to='/Collection'>Collection</Link>
+      <Link to='/Collection'>Gallery</Link>
+      <Link >About us</Link>
+      <Link >Contact Us</Link>
     </Nav>
     <Form inline>
       <div className='search'>
@@ -46,11 +48,13 @@ const Menu = ()=>{
       <Button variant="outline-info">Search</Button>
     </Form>
   </Navbar>:
-  <Navbar bg="dark" variant="dark">
-    <Link to='/'>Shop time</Link>
+  <Navbar bg="dark" variant="dark" className='nav'>
+    <h1><Link to='/'>Shop time</Link></h1>
     <Nav className="mr-auto">
       <Link to='/'>Home</Link>
-      <Link to='/Collection'>Collection</Link>
+      <Link to='/Collection'>Gallery</Link>
+      <Link >About us</Link>
+      <Link >Contact Us</Link>
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" value={val} onChange={HandleChnge}/>

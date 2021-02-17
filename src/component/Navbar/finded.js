@@ -7,7 +7,7 @@ const Finded = ({id, src, title, price, body})=>{
 
   const infoRoute = ()=>{
     dispatch({type:'INFO_ROUTE', id, src, price, title, body}) 
-        history.push({pathname:'/infopage'})
+        history.push({pathname:'/infopage/'})
   }
   return(
     <div onClick={()=>infoRoute(id, src, price, title, body)} className='findedBlock'>

@@ -69,8 +69,8 @@ export default(state=initialState,action={})=>{
           }
           ))
           return {...state, card:changesElement}
+      }
     }
-  }
     case 'INFO_ROUTE':{
       const documentatin = 
         {
@@ -82,6 +82,17 @@ export default(state=initialState,action={})=>{
         }
         console.log(documentatin);
       return {...state, infoPage:documentatin}
+    }
+    case 'DELETE_FUNCTION':{
+      const deleting = state.card
+        .map((elem)=>(
+          {
+          ...elem,
+          pointerEvents:elem.id === action.id ? !elem.pointerEvents: elem.pointerEvents,
+          totalprice:elem.id === action.id ? 0: elem.totalprice,
+        })
+        )
+        return {...state, card:deleting}
     }
   default :return state
 }

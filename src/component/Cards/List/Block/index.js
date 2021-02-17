@@ -29,7 +29,7 @@ const Block = ({id, title, body, src, button, pointerEvents, price, totalprice})
         <ButtonGroup>
           <Button disabled={!pointerEvents} onClick={()=>handlechangeQuantede('+')}>+</Button>
           {totalprice}
-          <Button disabled={!pointerEvents} onClick={()=>handlechangeQuantede('-')}>-</Button>
+          <Button disabled={totalprice <= 0} onClick={()=>handlechangeQuantede('-')}>-</Button>
         </ButtonGroup>
         </div>
         <Card.Img variant="top" src={src} onClick={()=>infoRoute(id, src, price, title, body)}/>

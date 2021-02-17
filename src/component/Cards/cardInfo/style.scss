@@ -1,14 +1,20 @@
 .documentation {
   font-family: serif;
-}
-.title {
-  display: flex;
-  justify-content: space-around;
-  background-color: #fefefe;
-}
-
-.info {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 40%;
+  .title {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fefefe;
+    margin-top: 73px;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    // padding-right: ;
+  }
+  p {
+    // text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
 }
